@@ -10,3 +10,8 @@ sudo nano /etc/postgresql/14/main/pg_hba.conf
 ```
 For the row *# IPv4 local connections:*, change *scram-sha-256* under *Column Method* to *trust*.
 <img src="imgs/pg_hba.PNG">
+
+Then restart postgresql.
+```
+sudo service postgresql restart
+```
