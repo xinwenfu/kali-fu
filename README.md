@@ -1,5 +1,25 @@
+## xrdp 
 
-## Armitage on Kali VM
+Install xrdp
+```
+sudo apt update
+sudo apt install xrdp
+
+sudo systemctl enable xrdp
+sudo systemctl restart xrdp
+```
+
+To [allow multiple sessions for the same user](https://c-nergy.be/blog/?p=16698), edit startwm.sh
+```
+sudo nano /etc/xrdp/startwm.sh
+```
+Add the following command at the end of the file
+```
+export $(dbus-launch)
+```
+
+
+## Armitage
 
 ### Installation of armitage on new Kali VM
 
