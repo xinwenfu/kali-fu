@@ -1,6 +1,6 @@
 ## xrdp 
 
-Install xrdp
+### Install xrdp
 ```
 sudo apt update
 sudo apt install xrdp
@@ -9,7 +9,9 @@ sudo systemctl enable xrdp
 sudo systemctl restart xrdp
 ```
 
-To [allow multiple sessions for the same user](https://c-nergy.be/blog/?p=16698), edit startwm.sh
+### [Allow multiple sessions for the same user](https://c-nergy.be/blog/?p=16698)
+
+Edit startwm.sh
 ```
 sudo nano /etc/xrdp/startwm.sh
 ```
