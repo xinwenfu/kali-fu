@@ -1,3 +1,11 @@
+## Installation of armitage on new Kali VM
+
+```
+sudo apt-get update
+sudo apt-get -y install armitage  
+```
+*-y* means automatic yes to prompts.
+
 
 ## pg_hba.conf error
 The newly installed armitage cannot start adn reports pg_hba.conf related error.
