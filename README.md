@@ -48,3 +48,8 @@ Then restart postgresql.
 ```
 sudo service postgresql restart
 ```
+
+## Passing yes argument to scp command
+```
+scp -o StrictHostKeyChecking=no root@IP:/root/K 
+```
