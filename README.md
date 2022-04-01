@@ -50,7 +50,7 @@ sudo service postgresql restart
 ```
 
 ### Change the command of launching armitage
-Change the original command
+Change the original command by right clicking the armitage icon and editting *Edit Application ...*
 ```
 sh -c "pkexec msfdb init && armitage"
 ```
