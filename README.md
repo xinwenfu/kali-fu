@@ -49,6 +49,17 @@ Then restart postgresql.
 sudo service postgresql restart
 ```
 
+### Change the command of launching armitage
+Change the original command
+```
+sh -c "pkexec msfdb init && armitage"
+```
+to
+```
+sh -c "pkexec sudo msfdb init && sudo armitage"
+```
+In this way, we run armitage as root, reducing a lot of troubles.
+
 ## Passing yes argument to scp command
 ```
 scp -o StrictHostKeyChecking=no root@IP:/root/K 
