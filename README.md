@@ -31,6 +31,13 @@ sudo apt-get -y install armitage
 ```
 *-y* means automatic yes to prompts.
 
+### Armitage would not start for a second time
+
+**Manually Stop Metasploit & Kill Stale Processes**: Before starting Armitage again, try running:
+```
+pkill -f armitage
+pkill -f msf
+```
 
 ### pg_hba.conf error
 The newly installed armitage cannot start adn reports pg_hba.conf related error.
