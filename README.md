@@ -36,7 +36,7 @@ sudo apt-get -y install armitage
 **Manually Stop Metasploit & Kill Stale Processes**: Before starting Armitage again, try running:
 ```
 pkill -f armitage
-pkill -f msf
+sudo pkill -f msf
 ```
 
 ### pg_hba.conf error
